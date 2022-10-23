@@ -1,6 +1,7 @@
 import search
 import write_read
 import delete
+import change #тут добавила
 
 def menu():
     m = input('''Поиск: 1.
@@ -17,6 +18,6 @@ def menu():
         case '3':
             return delete.delete()    
         case '4':
-            return 
+            return change.GradeAndProgress() #тут добавила
         case '0':
             return
