@@ -14,7 +14,7 @@ def GradeAndProgress(): #тут добавила
 
     match questionC:
         case "1":
-            with open("Phonebook_string.csv", "r+",  newline = "") as csvfile1:
+            with open("students_info.csv", "r+",  newline = "") as csvfile1:
                 bookString = write_read.read_file_string()
                 headlines = ["Surname", "Name", "Phone_Number", "Description"]
                 reader = csv.DictWriter(csvfile1, fieldnames = headlines)
